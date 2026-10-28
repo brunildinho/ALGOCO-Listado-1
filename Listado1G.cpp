@@ -15,14 +15,6 @@ int main() {
         inputs.push_back(xinput);
     }
 
-    /*
-do{
-    for (string palabra : inputs){
-        cout << palabra << endl;
-    }
-} while (next_permutation(inputs.begin(), inputs.end()));
-    */
-
     for (int i = 0; i < inputs.size(); i++){
         for(int j = 0; j < inputs.size(); j++){
             if (i != j){
@@ -36,5 +28,4 @@ do{
     }
 
     return 0;
-    //USAR DOS FOR PARA COMBINAR TODOS LOS PARES POSIBLES???
 }

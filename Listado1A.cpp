@@ -26,7 +26,7 @@ int main(){
         }
         else{
             int jumps = stoi(x);
-            p = ((p + jumps) % n + n) % n; //Normalización mala 
+            p = ((p + jumps) % n + n) % n;
             ordenes.push(jumps);   
         }
     }

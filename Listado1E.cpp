@@ -24,23 +24,8 @@ int main() {
             }
             //ver que las compras también se efectuen al insertar sell, no solo buy
             
-            else if (tipo_orden == "buy"){
-                lista_compras[precio_acciones] += nro_acciones;
-            /*
-                for (auto& par : lista_ventas){
-                    if (par.first <= precio_acciones){
-                        if (par.second < nro_acciones){
-                            nro_acciones -= par.second;
-                            par.second = 0;
-                        }
-                        else {
-                            par.second -= nro_acciones;
-                            nro_acciones = 0;
-                        }
-                    }
-                }
-            */
-            }
+            else if (tipo_orden == "buy") lista_compras[precio_acciones] += nro_acciones;
+            
             for (auto it_compra = lista_compras.begin(); it_compra != lista_compras.end(); ){
                 int precio_compra = it_compra->first;
                 int& cantidad_compra = it_compra->second;
