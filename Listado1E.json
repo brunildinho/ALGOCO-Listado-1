@@ -1,0 +1,24 @@
+{
+  "id": "Listado1E",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "E",
+  "title": "Stock Prices",
+  "constraints": {
+    "time_limit": "5000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "In this problem we deal with the calculation of stock prices. You need to know the following things about stock prices:\n• The ask price is the lowest price at which someone is willing to sell a share of a stock.\n• The bid price is the highest price at which someone is willing to buy a share of a stock.\n• The stock price is the price at which the last deal was established.\n\nWhenever the bid price is greater than or equal to the ask price, a deal is established. A buy order offering the bid price is matched with a sell order demanding the ask price, and shares are exchanged at the rate of the ask price until either the sell order or the buy order (or both) is fulfilled (i.e., the buyer wants no more stocks, or the seller wants to sell no more stocks). You will be given a list of orders (either buy or sell) and you have to calculate, after each order, the current ask price, bid price and stock price.",
+  "input_specification": "On the first line a positive integer: the number of test cases, at most 100. After that per test case:\n• One line with an integer $n$ ($1 \\le n \\le 1\\,000$): the number of orders.\n• $n$ lines of the form “*order_type* `x shares at` $y$”, where *order_type* is either “`buy`” or “`sell`”, $x$ ($1 \\le x \\le 1\\,000$) is the number of shares of a stock someone wishes to buy or to sell, and $y$ ($1 \\le y \\le 1000$) is the desired price.",
+  "output_specification": "Per test case:\n• $n$ lines, each of the form “$a_{i}$ $b_{i}$ $s_{i}$”, where $a_{i}$, $b_{i}$ and $s_{i}$ are the current ask, bid and stock prices, respectively, after the $i$-th order has been processed and all possible deals have taken place. Whenever a price is not defined, output “`-`” instead of the price.",
+  "additional_sections": {},
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "2\n6\nbuy 10 shares at 100\nsell 1 shares at 120\nsell 20 shares at 110\nbuy 30 shares at 110\nsell 10 shares at 99\nbuy 1 shares at 120\n6\nsell 10 shares at 100\nbuy 1 shares at 80\nbuy 20 shares at 90\nsell 30 shares at 90\nbuy 10 shares at 101\nsell 1 shares at 80",
+      "output": "- 100 -\n120 100 -\n110 100 -\n120 110 110\n120 100 99\n- 100 120\n100 - -\n100 80 -\n100 90 -\n90 80 90\n100 80 90\n100 - 80"
+    }
+  ]
+}

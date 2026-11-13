@@ -1,0 +1,31 @@
+{
+  "id": "Listado1C",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "C",
+  "title": "Sim",
+  "constraints": {
+    "time_limit": "1000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "This problem is an extension of another Kattis problem - backspace. In that problem, every time we see a character `'<'`, it actually means that the `'Backspace'` key is pressed and we undo the last character that was just typed.\n\nThe extension is as follows: Now, pressing a `'<'` (the `'Backspace'` key) when the (typing) cursor is at the front of the line does nothing. Now if we see a character `'['`, it actually means that the `'Home'` key is pressed and we move the (typing) cursor to the front of the line. Similarly, if we see a character `']'`, it actually means that the `'End'` key is pressed and we move the (typing) cursor the back of the line. For all other valid character in the input, it actually means that the corresponding key is pressed, we insert that character at the (typing) cursor position, and advance one position to the right the cursor accordingly.",
+  "input_specification": "The input starts with a line containing just one integer $T$ ($1 \\le T \\le 10$), denoting the number of test cases.\n\nEach test case is a line containing the string that was written in the Text Editor Sim (Steven IMproved). The length of the string is at most $10^{6}$, and it will only contain lowercase letters from the English alphabet [$'a'\\dots'z'$], digits [$'0'\\dots'9'$], spaces, as well as some of the three special characters: `'<'`, `'['`, or `']'`.",
+  "output_specification": "For each test case, output one line containing the final string that is displayed on screen.",
+  "additional_sections": {
+    "subtasks": "1. (27.5 points): $1 \\le T \\le 10$, string length is at most $10^{3}$, there is no `'['`, as seen in sample 1.\n2. (32.5 points): $1 \\le T \\le 10$, string length is at most $10^{3}$, there may be `'['`, as seen in sample 2.\n3. (40 points): $1 \\le T \\le 4$, string length is at most $10^{6}$."
+  },
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "1\nmy]]name] is] steva<en]<n halim]]]]]",
+      "output": "my name is steven halim"
+    },
+    {
+      "sample_number": 2,
+      "input": "1\n<<<hate<<<<<<loves [steva<en ] cs2040c< and also cs2040c",
+      "output": "steven loves cs2040 and also cs2040c"
+    }
+  ]
+}

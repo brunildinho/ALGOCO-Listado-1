@@ -1,0 +1,26 @@
+{
+  "id": "Listado1B",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "B",
+  "title": "Bungee Builder",
+  "constraints": {
+    "time_limit": "1000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "A new bungee jumping attraction is to be built at a mountain range of $N$ mountains of heights $H_{1}, H_{2}, \\dots, H_{N}$. This project involves constructing a horizontal bridge connecting two distinct mountains, on which the attraction will be opened. The bridge may be built at any height up to the minimum of the two connecting mountains as long as it is strictly higher than all mountains between the two.\n\nOnce the bridge is built, the attraction will be opened at some point along it. The jumping distance is limited by the vertical distance of the attraction from the ground directly below. In order to achieve the greatest level of excitement, the bridge should be built to maximise the distance of the furthest point from the ground.\n\nConsider the following example:\nMountain: 1 2 3 4 5 6 7 8 9 10\nHeight: 3 5 1 4 2 3 7 2 2 5\nThe optimal bridge is denoted by the solid red line and the jumping distance is denoted by the dotted red line.\n\nYour task is to determine the maximum jumping distance achievable. If no bridge can be built, the distance is zero.",
+  "input_specification": "The first line contains an integer $N$ ($1 \\le N \\le 10^{6}$), the number of mountains. The second line contains $N$ integers $H_{1}, H_{2}, \\dots, H_{N}$ where $H_{i}$ ($0 \\le H_{i} \\le 10^{9}$) denotes the height of the $i^{th}$ mountain.",
+  "output_specification": "The maximum jumping distance possible.",
+  "additional_sections": {
+    "subtasks": "1. (25 Points): $1 \\le N \\le 10^{2}$\n2. (50 Points): $1 \\le N \\le 10^{3}$\n3. (25 Points): No additional constraint"
+  },
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "10\n3 5 1 4 2 3 7 2 2 5",
+      "output": "4"
+    }
+  ]
+}

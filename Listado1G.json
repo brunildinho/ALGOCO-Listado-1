@@ -1,0 +1,24 @@
+{
+  "id": "Listado1G",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "G",
+  "title": "Compound Words",
+  "constraints": {
+    "time_limit": "1000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "Write a program that reads a list of words from standard input and prints out a sorted list of all unique compound words that can be made by concatenating two different words from the input list. If the same compound word can be formed more than one way, it should only be listed once in the output.",
+  "input_specification": "Input is a list of $1$ to $100$ words separated by whitespace (spaces and / or newlines). There may be more than one word on each input line. Each word is a sequence of at most $10$ lowercase English letters ($a-z$). Input ends at end of file.",
+  "output_specification": "Your program should print out all unique compound words, one per line. They should be printed in sorted (dictionary) order.",
+  "additional_sections": {},
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "a bb\nab b",
+      "output": "aab\nab\naba\nabb\nabbb\nba\nbab\nbba\nbbab\nbbb"
+    }
+  ]
+}

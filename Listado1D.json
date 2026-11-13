@@ -1,0 +1,24 @@
+{
+  "id": "Listado1D",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "D",
+  "title": "Integer Lists",
+  "constraints": {
+    "time_limit": "1000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "The programming language Better And Portable Code (BAPC) is a language for working with lists of integers. The language has two built-in functions: `'R'` (reverse) and `'D'` (drop).\n\nThe function `'R'` reverses its input list, and `'D'` drops the first element of its input and returns the rest, or gives an error in case its input is an empty list. To get more advanced behavior, functions can be composed: \"AB\" is the function that first applies `'A'` to its input and then `'B'` to the resulting list. For example, \"RDD\" is a function that reverses a list and then drops the first two elements.\n\nUnfortunately, our BAPC interpreter has bit rotted, so we ask you to write a new one. Given a BAPC program and its input, return its output or \"error\" in case `'D'` is applied to an empty list.\n\nLists are represented as the character `'['` followed by a comma-separated list of integers followed by the character `']'`. Notice that the input and output lists can be quite long.",
+  "input_specification": "On the first line one positive number: the number of test cases, at most 100. After that per test case:\n• one line with a string $p$ ($1 \\le length(p) \\le 100\\,000$): a BAPC program, consisting of the characters `'R'` and `'D'`.\n• one line with an integer $n$ ($0 \\le n \\le 100\\,000$): the number of elements in the input.\n• one line with a list of $n$ integers in the form $[x_{1}, \\dots, x_{n}]$ ($1 \\le x_{i} \\le 100$): the input list.",
+  "output_specification": "Per test case:\n• one line with the resulting integer list or \"error\" in case of an error.",
+  "additional_sections": {},
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "4\nRDD\n4\n[1,2,3,4]\nDD\n1\n[42]\nRRD\n6\n[1,1,2,3,5,8]\nD\n0\n[]",
+      "output": "[2,1]\nerror\n[1,2,3,5,8]\nerror"
+    }
+  ]
+}
