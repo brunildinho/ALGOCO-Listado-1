@@ -1,16 +1,12 @@
 Listado 1: TDAs [CC]  Aug 20, 2026
 
-# **Problem A. Game of Throwns**
+# **Problem 1A. Game of Throwns**
 
-**Time Limit** 1000 ms
-
-**Mem Limit** 1048576 kB
-
-**OS** Linux
+**Time Limit** 1000 ms | **Mem Limit** 1048576 kB | **OS** Linux
 
 Daenerys suele inventar juegos para enseñar a sus alumnos de segundo grado de Informática diversos aspectos de la disciplina. Para la lección de esta semana, pide a los niños que formen un círculo y se lancen (con cuidado) un huevo de dragón petrificado.
 
-Los _n_ niños están numerados del 0 al _n_−1 (al fin y al cabo, es una clase de Informática) en sentido horario alrededor del círculo. El niño 0 comienza siempre con el huevo. Daenerys puede indicar una de estas dos acciones:
+Los _n_ niños están numerados del 0 al _n_ −1 (al fin y al cabo, es una clase de Informática) en sentido horario alrededor del círculo. El niño 0 comienza siempre con el huevo. Daenerys puede indicar una de estas dos acciones:
 
 1. Un número _t_, que indica que el huevo debe lanzarse al niño que se encuentra a _t_ posiciones en sentido horario respecto a quien tiene el huevo en ese momento (dando la vuelta al círculo si es necesario). Si _t_ es negativo, el lanzamiento se realiza en sentido antihorario.
 
