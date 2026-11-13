@@ -1,0 +1,24 @@
+{
+  "id": "Listado1D",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "D",
+  "title": "Integer Lists",
+  "constraints": {
+    "time_limit": "1000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "El lenguaje de programación Better And Portable Code (BAPC) es un lenguaje para trabajar con listas de enteros. El lenguaje tiene dos funciones integradas: `'R'` (invertir) y `'D'` (eliminar el primero).\n\nLa función `'R'` invierte su lista de entrada, y `'D'` elimina el primer elemento de su entrada y devuelve el resto, o da un error en caso de que su entrada sea una lista vacía. Para obtener un comportamiento más avanzado, las funciones se pueden componer: \"AB\" es la función que primero aplica `'A'` a su entrada y luego `'B'` a la lista resultante. Por ejemplo, \"RDD\" es una función que invierte una lista y luego elimina los dos primeros elementos.\n\nDesafortunadamente, nuestro intérprete de BAPC se ha deteriorado, por lo que te pedimos que escribas uno nuevo. Dado un programa BAPC y su entrada, devuelve su salida o \"error\" en caso de que `'D'` se aplique a una lista vacía.\n\nLas listas se representan como el carácter `'['` seguido de una lista de enteros separados por comas y seguida del carácter `']'`. Ten en cuenta que las listas de entrada y salida pueden ser bastante largas.",
+  "input_specification": "En la primera línea un número positivo: el número de casos de prueba, a lo sumo 100. Después de eso, por cada caso de prueba:\n• una línea con una cadena $p$ ($1 \\le length(p) \\le 100\\,000$): un programa BAPC, que consta de los caracteres `'R'` y `'D'`.\n• una línea con un entero $n$ ($0 \\le n \\le 100\\,000$): el número de elementos en la entrada.\n• una línea con una lista de $n$ enteros de la forma $[x_{1}, \\dots, x_{n}]$ ($1 \\le x_{i} \\le 100$): la lista de entrada.",
+  "output_specification": "Por cada caso de prueba:\n• una línea con la lista de enteros resultante o \"error\" en caso de error.",
+  "additional_sections": {},
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "4\nRDD\n4\n[1,2,3,4]\nDD\n1\n[42]\nRRD\n6\n[1,1,2,3,5,8]\nD\n0\n[]",
+      "output": "[2,1]\nerror\n[1,2,3,5,8]\nerror"
+    }
+  ]
+}

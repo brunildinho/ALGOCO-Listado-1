@@ -1,0 +1,29 @@
+{
+  "id": "Listado1A",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "A",
+  "title": "Game of Throwns",
+  "constraints": {
+    "time_limit": "1000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "Daenerys frecuentemente inventa juegos para ayudar a enseñar a su clase de Ciencias de la Computación de segundo grado sobre diversos aspectos de la disciplina. Para la lección de esta semana, hace que los niños formen un círculo y lancen (con cuidado) un huevo de dragón petrificado.\n\nLos $n$ niños están numerados del $0$ al $n - 1$ (después de todo, es una clase de Ciencias de la Computación) en sentido horario alrededor del círculo. El niño $0$ siempre comienza con el huevo. Daenerys dirá en voz alta una de dos cosas:\n1. un número $t$, que indica que el huevo debe lanzarse al niño que está $t$ posiciones en sentido horario desde quien tiene el huevo actualmente, dando la vuelta al círculo si es necesario. Si $t$ es negativo, entonces el lanzamiento es en sentido antihorario.\n2. la frase `undo` $m$, que indica que se deben deshacer los últimos $m$ lanzamientos. Ten en cuenta que los comandos `undo` nunca deshacen otros comandos `undo`; solo deshacen los comandos descritos en el ítem $1$ anterior.\n\nPor ejemplo, si hay $5$ niños, y la profesora dice en voz alta los cuatro comandos de lanzamiento `8 -2 3 undo 2`, los lanzamientos comenzarán desde el niño $0$ al niño $3$, luego del niño $3$ al niño $1$, y luego del niño $1$ al niño $4$. Después de esto, las instrucciones `undo 2` harán que el huevo sea lanzado de vuelta del niño $4$ al niño $1$ y luego del niño $1$ de vuelta al niño $3$. Si Daenerys dice en voz alta $0$ (o $n, -n, 2n, -2n$, etc.), entonces el niño con el huevo simplemente lo lanza recto hacia arriba en el aire y lo atrapa de nuevo (con cuidado).\n\nA Daenerys le gustaría un pequeño programa que determine dónde debería terminar el huevo si sus comandos se ejecutan correctamente. No preguntes qué les pasa a los niños si este no es el caso.",
+  "input_specification": "La entrada consiste en dos líneas. La primera línea contiene dos enteros positivos $n$ $k$ ($1 \\le n \\le 30$, $1 \\le k \\le 100$) que indican el número de estudiantes y cuántos comandos de lanzamiento dice Daenerys en voz alta, respectivamente. La siguiente línea contiene los $k$ comandos de lanzamiento. Cada comando es ya sea un entero $p$ ($-10\\,000 \\le p \\le 10\\,000$) que indica cuántas posiciones lanzar el huevo en sentido horario o `undo` $m$ ($m \\ge 1$) que indica que se deben deshacer los últimos $m$ lanzamientos. Daenerys nunca hace que los niños deshagan más allá del inicio del juego.",
+  "output_specification": "Muestra el número del niño con el huevo al final del juego.",
+  "additional_sections": {},
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "5 4\n8 -2 3 undo 2",
+      "output": "3"
+    },
+    {
+      "sample_number": 2,
+      "input": "5 10\n7 -3 undo 1 4 3 -9 5 undo 2 undo 1 6",
+      "output": "2"
+    }
+  ]
+}

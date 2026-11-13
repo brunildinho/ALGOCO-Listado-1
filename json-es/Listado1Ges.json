@@ -1,0 +1,24 @@
+{
+  "id": "Listado1G",
+  "listado": 1,
+  "listado_title": "Listado 1: TDAS [CC]",
+  "date": "Aug 20, 2026",
+  "problem_letter": "G",
+  "title": "Compound Words",
+  "constraints": {
+    "time_limit": "1000 ms",
+    "memory_limit": "1048576 kB",
+    "os": "Linux"
+  },
+  "statement": "Escribe un programa que lea una lista de palabras de la entrada estándar e imprima una lista ordenada de todas las palabras compuestas únicas que se pueden formar concatenando dos palabras diferentes de la lista de entrada. Si la misma palabra compuesta se puede formar de más de una manera, debe aparecer listada solo una vez en la salida.",
+  "input_specification": "La entrada es una lista de $1$ a $100$ palabras separadas por espacios en blanco (espacios y/o saltos de línea). Puede haber más de una palabra en cada línea de entrada. Cada palabra es una secuencia de a lo sumo $10$ letras minúsculas del alfabeto inglés ($a-z$). La entrada termina al final del archivo.",
+  "output_specification": "Tu programa debe imprimir todas las palabras compuestas únicas, una por línea. Deben imprimirse en orden ordenado (de diccionario).",
+  "additional_sections": {},
+  "samples": [
+    {
+      "sample_number": 1,
+      "input": "a bb\nab b",
+      "output": "aab\nab\naba\nabb\nabbb\nba\nbab\nbba\nbbab\nbbb"
+    }
+  ]
+}
